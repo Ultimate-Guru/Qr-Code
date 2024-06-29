@@ -1,0 +1,126 @@
+/* Basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(220, 15%, 55%);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container img {
+    width: 100%;
+    max-width: 290px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #212121;
+    font-weight: 700;
+}
+
+p {
+    color: hsl(217, 5%, 48%);
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 17px;
+}
+
+/* Media Queries */
+
+/* For screens up to 320px */
+@media (max-width: 320px) {
+    .container {
+        width: 90%;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+/* For screens up to 480px */
+@media (max-width: 480px) {
+    .container {
+        width: 80%;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+/* For screens up to 768px */
+@media (max-width: 768px) {
+    .container {
+        width: 60%;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+/* For screens up to 1024px */
+@media (max-width: 1024px) {
+    .container {
+        width: 50%;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+/* For screens larger than 1024px */
+@media (min-width: 1025px) {
+    .container {
+        width: 40%;
+    }
+
+    .container img {
+        width: 100%;
+        max-width: 290px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
